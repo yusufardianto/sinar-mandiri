@@ -1,28 +1,208 @@
-// .navbar-content {
-//   position: fixed;
-//   //   margin-top: ;
-// }
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  // top: 20px;
+}
 
-// .hero-content {
-//   position: static;
-// }
+#header {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+@media (max-width: 892px) {
+  #header {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    top: 0;
+    background: #ffffff;
+  }
+  #header.header-scrolled,
+  #header.header-container {
+    background: #ffffff;
+  }
+}
+
+.navbar {
+  padding: 0;
+  .navbar-brand {
+    padding-right: 16rem;
+  }
+  @media (max-width: 800px) {
+    .navbar-brand {
+      padding-right: 28rem;
+    }
+  }
+  @media (max-width: 550px) {
+    .navbar-brand {
+      padding-right: 4rem;
+    }
+  }
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+.nav-link.scrollto.bg-warning.rounded-2.active {
+  color: #fff;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #36343a;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #fdbb6b;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #fdbb6b;
+  padding: 10px 25px;
+  margin-left: 30px;
+  margin-right: 15px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #fdbb6b;
+}
+
+#hero {
+  width: 100%;
+  height: 95vh;
+  background: url("../../../asset/images/hero.png") center center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .container {
+  padding-top: 80px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0 20px 10px 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+#hero h2 {
+  margin: 20px 30px 10px 30px;
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero .btn-get-started:hover {
+  background: #fdbb6b;
+  border: 2px solid #fdbb6b;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .container {
+    padding-top: 60px;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
 .section-segment {
   .segment-title {
     justify-content: center;
     margin: auto;
     text-align: center;
   }
-  .sement-content {
-    margin: auto;
-    align-content: center;
-  }
   .segment-card {
-    background: #f6f6f6;
-    box-shadow: 10px 10px 30px 10px rgba(224, 224, 224, 0.4);
+    background: #fffef5;
+    box-shadow: 10px 10px 30px 10px rgba(226, 226, 226, 0.4);
     border-radius: 30px;
+    padding: 20px;
+    // width: 300px;
+    // height: 400px;
     .subtitle-segment {
       font-style: normal;
       text-align: center;
+    }
+    a.small-box-footer {
+      margin-top: 10px;
+      color: #fdbb6b;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
     }
   }
 }
@@ -30,12 +210,15 @@
   color: #444444;
   font-size: 14px;
   background: #f1f0f2;
+  stroke: none;
 }
 
 .credits {
   a {
     padding-top: 5px;
-    font-size: 13px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
     color: #fdbb6b;
   }
 }
