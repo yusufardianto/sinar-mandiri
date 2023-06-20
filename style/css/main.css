@@ -141,11 +141,12 @@ a.nav-link.scrollto.rounded-2.active {
   background-size: cover;
 }
 
-#hero .container {
-  padding-top: 80px;
-  margin-left: 20px;
+@media (min-width: 900px) {
+  #hero .container {
+    padding-top: 80px;
+    margin-left: 20px;
+  }
 }
-
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
