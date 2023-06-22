@@ -118,13 +118,9 @@
         class="hero-img position-static carousel-fade"
         alt=""
       />
-      <div
-        class="container position-absolute"
-        data-aos="fade-in"
-        data-aos-delay="200"
-      >
+      <div class="position-absolute" data-aos="fade-in" data-aos-delay="200">
         <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner" data-aos="zoom-in">
+          <div class="container carousel-inner" data-aos="zoom-in">
             <div class="carousel-item active">
               <h1>
                 Let's Build<span style="color: burlywood">
@@ -179,24 +175,32 @@
               >
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="button-hero">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
