@@ -245,11 +245,32 @@ a.nav-link.scrollto.rounded-2.active {
       text-decoration: none;
     }
   }
+  @media (min-width: 300px) {
+    .segment-card {
+      width: 290px;
+      margin: auto;
+    }
+  }
+}
+.segment-img {
+  width: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .segment-img {
+    width: 150px;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+  }
 }
 #footer {
-  color: #444444;
+  color: white;
   font-size: 14px;
-  background: #f1f0f2;
+  background: #222e50;
   stroke: none;
 }
 
