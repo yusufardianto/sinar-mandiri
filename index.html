@@ -8,6 +8,7 @@
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/css/main.css" />
+    <link rel="stylesheet" href="vendor/aos/aos.css" />
     <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css" />
     <link rel="stylesheet" href="vendor/remixicon/remixicon.css" />
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
@@ -123,7 +124,7 @@
         data-aos-delay="200"
       >
         <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
+          <div class="carousel-inner" data-aos="zoom-in">
             <div class="carousel-item active">
               <h1>
                 Let's Build<span style="color: burlywood">
@@ -204,7 +205,10 @@
       <div class="section-segment mb-5">
         <div class="row">
           <div class="mt-5">
-            <div class="segment-title justify-content-center">
+            <div
+              class="segment-title justify-content-center"
+              data-aos="fade-up"
+            >
               <h1>Business Segment</h1>
             </div>
           </div>
@@ -213,7 +217,11 @@
           <div class="mt-5">
             <div class="content-card">
               <div class="row">
-                <div class="col-lg-4 mt-3">
+                <div
+                  class="col-lg-4 mt-3"
+                  data-aos="fade-in"
+                  data-aos-delay="100"
+                >
                   <div class="segment-card">
                     <div class="row">
                       <h3 class="subtitle-segment align-center">
@@ -236,7 +244,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 mt-3">
+                <div
+                  class="col-lg-4 mt-3"
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                >
                   <div class="segment-card">
                     <div class="row">
                       <h3 class="subtitle-segment align-center">
@@ -259,7 +271,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 mt-3">
+                <div
+                  class="col-lg-4 mt-3"
+                  data-aos="fade-in"
+                  data-aos-delay="300"
+                >
                   <div class="segment-card">
                     <div class="row">
                       <h3 class="subtitle-segment">Electrical</h3>
@@ -339,5 +355,9 @@
     <script src="style/js/main.js"></script>
     <script src="vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
