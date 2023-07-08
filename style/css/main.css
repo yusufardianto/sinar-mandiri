@@ -458,44 +458,60 @@ a.nav-link.scrollto.rounded-2.active {
   color: white;
 }
 
+.capability-title {
+  text-align: center;
+}
+
+.capability-subtitle {
+  text-align: start;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.capability-content {
+  margin: 30px;
+}
+.capability-content .card {
+  margin-top: 200px;
+}
+
 .client-title {
   text-align: center;
 }
 
 .client-subtitle {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 45px;
   margin-bottom: 10px;
 }
 
-.client-content .client-item {
-  padding: 20px 20px 20px 20px;
-  margin: 20px;
-  background: #222e50;
-  box-sizing: content-box;
-  min-height: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(22, 5, 129, 0.24);
+.client-content {
+  background-color: #1a5b83;
+  padding: 20px;
 }
-.client-content .client-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: rgb(255, 255, 255);
+.client-content .card {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.client-content .client-item .quote-icon-left,
-.client-content .client-item .quote-icon-right {
-  color: burlywood;
-  font-size: 26px;
+.client-content .internasional-image {
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  padding-bottom: 2rem;
 }
-.client-content .client-item p {
-  color: beige;
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
+.client-content .card {
+  padding: 30px;
+}
+
+.client-image {
+  width: 1020px;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.client-title {
+  color: white;
 }
 
 .navbar .dropdown ul {
