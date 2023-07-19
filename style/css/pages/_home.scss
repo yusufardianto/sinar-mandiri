@@ -115,7 +115,16 @@
 a.nav-link.scrollto.rounded-2.active {
   color: #fff;
   background: #fdbb6b;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
+}
+a.language {
+  text-decoration: none;
+}
+a.language.rounded-2.active {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #fff;
+  background: #fdbb6b;
 }
 .navbar a,
 .navbar .a.active:focus {
