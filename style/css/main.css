@@ -162,8 +162,8 @@ a.language.rounded-2.active {
 }
 
 @media (max-width: 500px) {
-  .dropdown-translete {
-    margin: auto;
+  .translate {
+    margin-left: 5rem;
   }
   .bahasa {
     width: 150px;
