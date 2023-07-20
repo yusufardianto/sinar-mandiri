@@ -161,6 +161,14 @@ a.language.rounded-2.active {
   background: #fdbb6b;
 }
 
+@media (max-width: 500px) {
+  .dropdown-translete {
+    margin: auto;
+  }
+  .bahasa {
+    width: 150px;
+  }
+}
 .navbar a,
 .navbar .a.active:focus {
   padding: 10px 0px 10px 0px;
@@ -202,6 +210,12 @@ a.language.rounded-2.active {
   color: #fff;
 }
 
+@media (max-width: 500px) {
+  nav#navbar.navbar.navbar-expand-lg {
+    width: 300px;
+    margin: auto;
+  }
+}
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
