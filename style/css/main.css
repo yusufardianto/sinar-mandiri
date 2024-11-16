@@ -161,6 +161,15 @@ a.language.rounded-2.active {
   background: #fdbb6b;
 }
 
+li.nav-item {
+  width: 150px;
+}
+
+a.language {
+  margin: auto;
+  padding: 5px;
+}
+
 @media (max-width: 500px) {
   .translate {
     margin-left: 5rem;
